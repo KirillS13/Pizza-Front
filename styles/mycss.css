@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    background: linear-gradient(0deg, #fffdbf 0%, #ffffff 98%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    font-family: Poppins, sans-serif;
+}
+
+.nav-link{
+    color: white;
+}
+
+.navbar-nav .nav-link.active {
+    color: wheat;
+}
+
+.navbar-brand img{
+    width: 40px;
+}
+.navbar-toggler{
+    background-color: wheat;
+}
+
+.card{
+    margin-bottom: 20px;
+    box-shadow: -5px 4px 31px 2px #d1d1d1;
+}
+
+.card a{
+    text-decoration: none;
+}
+.card h5>a{
+    color: black;
+}
+
+.card p>a{
+    color: black;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1) grayscale(100);
+  z-index: 10;
+}
+
+.slide-text,
+.footer-text{
+    margin: auto auto;
+}
+
+.carousel-control-prev-icon{
+    background-color: rgb(82, 80, 80);
+}
+.carousel-control-next-icon{
+    background-color: rgb(82, 80, 80);
+}
+
+
+section{
+    margin-bottom: 200px;
+}
+
+footer{
+    background: linear-gradient(180deg, #fffdbf 0%, #eeecea 98%);
+}
+
+.media-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-anim{
+    animation: myAnim 2s ease 0s infinite normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(45px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+
+@media (max-width: 755px) {
+    .carousel-indicators{
+        display: none;
+    }
+}   
+
